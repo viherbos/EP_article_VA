@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  6 FEB 2018 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  6 FEB 2018 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2080,53 +2080,8 @@ Underfull \hbox (badness 4832) in paragraph at lines 369--370
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 374--375
-[]\T1/lmr/m/n/10 Finally the PMT base was designed and
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 374--375
-\T1/lmr/m/n/10 fabricated with the balance between the best
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 374--375
-\T1/lmr/m/n/10 materials involved in the base were screened,
- []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 374--375
-\T1/lmr/m/n/10 we conclude that the level of radiopurity is
- []
-
-
-Underfull \hbox (badness 2293) in paragraph at lines 374--375
-\T1/lmr/m/n/10 good for us. This way we accomplish the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
-[]\T1/lmr/m/n/10 Regarding the front-end electronics, we
- []
-
-
-Underfull \hbox (badness 5331) in paragraph at lines 376--377
-\T1/lmr/m/n/10 simulated, designed, manufactured, mounted,
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 376--377
-\T1/lmr/m/n/10 tested and we obtained the results that we
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 376--377
-\T1/lmr/m/n/10 expected. Once the electronics results were
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 376--377
-\T1/lmr/m/n/10 validated as good, we proceeded to build a
+Underfull \hbox (badness 2351) in paragraph at lines 376--377
+\T1/lmr/m/n/10 designed, manufactured, mounted, tested and
  []
 
 
@@ -2187,7 +2142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--14
  []
 
 
-Underfull \vbox (badness 2376) has occurred while \output is active []
+Underfull \vbox (badness 4765) has occurred while \output is active []
 
  [10 <./figures/7C_lin.pdf> <./figures/signal_preblr.png> <./figures/signal_blr
 .png>]
