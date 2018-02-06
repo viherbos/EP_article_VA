@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introducction}{}% 1
 \BOOKMARK [1][-]{section.2}{PMT base circuit}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Heat dissipation tests}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Test bench \046 linearity measurements}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Power dissipation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Optimizing the base circuit design}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Front-end electronics}{}% 5
 \BOOKMARK [2][-]{subsection.3.1}{Grounded cathode connection}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.2}{High \040constant value solution}{section.3}% 7
