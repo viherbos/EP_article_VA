@@ -99,7 +99,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \section {PMT base circuit}
 
-\par The PMTs receive high voltage and have their signal extracted via kapton twisted cables connected to a feedthrough in the torispherical head of the pressure vessel. The distribution of signal and bias voltage at each individual PMT is done by means of a circular kapton circuit board (PMT base)with receptacles for the PMT pins. The PMT base (fig.~\ref{fig:7C_layout}) is covered with thermal epoxy (Araldite 2011\textregistered) to avoid dielectric breakdown in moderate vacuum or in a N2 atmosphere, backed with a 12-cm thick copper cap to shield the detector against external radiation and connected to the support plate to allow generated heat to be dissipated under vacuum conditions.
+\par The PMTs receive high voltage and have their signal extracted via kapton twisted cables connected to a feedthrough in the torispherical head of the pressure vessel. The distribution of signal and bias voltage at each individual PMT is done by means of a circular kapton circuit board (PMT base)with receptacles for the PMT pins. The PMT base (figure~\ref{fig:7C_layout}) is covered with thermal epoxy (Araldite 2011\textregistered) to avoid dielectric breakdown in moderate vacuum or in a N2 atmosphere, backed with a 12-cm thick copper cap to shield the detector against external radiation and connected to the support plate to allow generated heat to be dissipated under vacuum conditions.
 
 \par PMT bias voltage (1270 V) was established through a trade-off between single photon detection capability and manufacturer recommended high voltage range for best linearity.
 
@@ -107,7 +107,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \subsection {Power dissipation}
 
-\par Taking into account static power consumption constraints, a lower limit for resistor values can be established. Manufacturer recommended ratios between the twelve dynode voltages allow us to define a set of values for base resistors (table \ref{tab:R_C_values}). Figure fig.~\ref{fig:BASE} shows the actual PMT base circuit. Total power dissipation for each base circuit depends on the exact high voltage supplied to the PMT and will lie in the range of [30-40]~mW. Simulations with finite elements software (Comsol Multiphysics) have been carried out under vacuum condition, yielding a harmless 3~\degree{C} increase above ambient temeprature. This results was later confirmed in laboratory.
+\par Taking into account static power consumption constraints, a lower limit for resistor values can be established. Manufacturer recommended ratios between the twelve dynode voltages allow us to define a set of values for base resistors. Figure ~\ref{fig:BASE} shows the actual PMT base circuit. Total power dissipation for each base circuit depends on the exact high voltage supplied to the PMT and will lie in the range of [30-40]~mW. Simulations with finite elements software (Comsol Multiphysics) have been carried out under vacuum condition, yielding a harmless 3~\degree{C} increase above ambient temeprature. This results was later confirmed in laboratory.
 
 
 \subsection {Optimizing the base circuit design}
@@ -116,7 +116,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \par Since each dynode stage increases the gain by a given factor (based on the geometry and characteristics of the PMT) the highest voltage drops will be located at the last stages where the amount of charge to be delivered by the PMT is higher. Therefore, starting from the last PMT stage, a number of stages will be backed with capacitors to meet the design goal. 
 
-\par A trade-off between radiopurity limits \cite{1029-8479}  (capacitors show a high activity in a number of radioisotopes) and linearity requires to carefully chose the minimum number of capacitors that allow to meet the linearity goal of a worst-case 1%. Table \ref{tab:R_C_values} shows required capacitors as well as their values.
+\par A trade-off between radiopurity limits \cite{1029-8479}  (capacitors show a high activity in a number of radioisotopes) and linearity requires to carefully chose the minimum number of capacitors that allow to meet the linearity goal of a \mbox{worst-case} 1\%. %Table \ref{tab:R_C_values} shows required capacitors as well as their values.
 
 \begin{figure*}[ht]
   \begin{center}
@@ -126,25 +126,25 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
   \end{center}
 \end{figure*}
 
-\begin{table*}[ht]
-\scriptsize
-	\caption{Resistor \& capacitors base values}
-	\label{tab:R_C_values}	
-	\begin{center}
-		\begin{tabular}{ c | c | c | c | c | c | c | c | c | c | c | c | c | c | c |}
-			Dynodes & K & Dy1/G & Dy2 & Dy3 & Dy4 & Dy5 & Dy6 & Dy7 & Dy8 & Dy9 & Dy10 & Dy11 & Dy12 & P\\
-			\hline
-			Ratio & &  4 & 1.5 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 1 \\
-			\hline
-			Resistors & & 8M & 3M & 4M & 2M & 2M & 2M & 2M & 2M & 2M & 2M & 2M & 4M & 4M  \\
-			\hline
-			Capacitors &  &  &  &  &  &  &  &  &  &  &  & 2x 4,75uF & 3x 1,5uF & 2x 4,75uF  \\
-		\end{tabular}
-	\end{center}
-\end{table*}
+%\begin{table*}[ht]
+%\scriptsize
+%	\caption{Resistor \& capacitors base values}
+%	\label{tab:R_C_values}	
+%	\begin{center}
+%		\begin{tabular}{ c | c | c | c | c | c | c | c | c | c | c | c | c | c | c |}
+%			Dynodes & K & Dy1/G & Dy2 & Dy3 & Dy4 & Dy5 & Dy6 & Dy7 & Dy8 & Dy9 & Dy10 & Dy11 & Dy12 & P\\
+%			\hline
+%			Ratio & &  4 & 1.5 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 1 \\
+%			\hline
+%			Resistors & & 8M & 3M & 4M & 2M & 2M & 2M & 2M & 2M & 2M & 2M & 2M & 4M & 4M  \\
+%			\hline
+%			Capacitors &  &  &  &  &  &  &  &  &  &  &  & 2x 4,75uF & 3x 1,5uF & 2x 4,75uF  \\
+%		\end{tabular}
+%	\end{center}
+%\end{table*}
 
 
-\par To reach the results above, SPICE simulations allowed to find out the required capacitor values, using as criteria a 1% linearity and a worst-case voltage drop of 0.1\% between dynodes. A linearity test bench (including the PMT, base circuit, cabling and front-end electronics) and the algorithm described in figure \ref{fig:Base_Sizing} were used to determine the number of capacitor-backed stages.
+\par To reach the results above, SPICE simulations allowed to find out the required capacitor values, using as criteria a 1\% linearity and a worst-case voltage drop of 0.1\% between dynodes. A linearity test bench (including the PMT, base circuit, cabling and front-end electronics) and the algorithm described in figure \ref{fig:Base_Sizing} were used to determine the number of capacitor-backed stages.
 
 
 \begin{figure}
@@ -259,7 +259,7 @@ Such high value resistors may amplify low frequency components as shown in eq. \
 
 Our proposal for this novel FEE design is to reduce the value of the R1 resistor. This would bring a wide swing in the baseline but it can be accurately recovered using a Digital Signal Processing algorithm once the AC coupled signal has been acquired. The decision has been taken based on the results shown in the previous section: extremely high resistor values gave results too close to the energy resolution limits, and second order effects related to components parasitics might have a strong influence on final results. Moreover high impedance nodes such as the associated to high resistors are more sensitive to coupled external noise. As a result, a trade-off between low frequency effects suppression and feasibility of signal recovery has been established. The lower the $f_{cutoff}$ the easier to recover the AC coupled signal but the higher the vulnerability to low frequency noise and baseline random walks that can have a very negative effect on energy resolution computation in long signals. A value of R1=$1600~\Omega$ has been chosen which gives a $f_{cutoff}$ = 10~kHz. This should attenuate most of the common noises related to electrical engines and other industrial environment elements. Higher $f_{cutoff}$ frequencies would provide a better filtering effect but also would reduce SNR due to the loss in signal amplitude in AC coupled signals.
 
-\par Noise has been one of the most important specifications, carefully studied from the beginning in order to enhance energy resolution results. The active components in the FEE have been chosen mainly relying on their noise specs. The bandwidth of the FEE (3~MHz) has been chosen to make it work as a shaping filter, stretching the time length of the single photo-electron (SPE) response that was provided as a specification by the team in charge of the detector calibration. The SPE must be wider to can measure better with our sampling frequency.
+\par Noise has been one of the most important specifications, carefully studied from the beginning in order to enhance energy resolution results. The active components in the FEE have been chosen mainly relying on their noise specs. The bandwidth of the FEE (3~MHz) has been chosen to make it work as a shaping filter stretching the time length of the single photo-electron (SPE) response. This last aims at improving the sampling operation carried out at the DAQ level due to its sampling frequency limit. However a rise in SPE length introduces an amplitude loss which must be compensated to keep a reasonable signal to noise ratio. This requires a trade-off between SPE length and filter gain.  
 
 \par   A simplified version of the FEE is shown in figure~\ref{fig:FEE_scheme}. A pseudo-differential transmission has been chosen in order to reduce coupled noise which is expected to be high, since the distance between the FEE rack and the vessel is about 12 m. The AC coupled transmission enables the injection of the high voltage supply to the PMTs through the same signal cable. Assuming C2 AC coupling capacitor has a self resonant frequency (SRF) higher than the maximum estimated bandwidth of the FEE,  the line termination ($120~\Omega$) will be implemented at Zin. This design choice also allows to terminate the common mode signal that travels along the transmission line and is expected to be quite high since a non-fully-differential transmission is being used. The common mode termination is implemented at the amplifier input ($\pi$ type termination with RA and RB).
 
@@ -276,7 +276,7 @@ Our proposal for this novel FEE design is to reduce the value of the R1 resistor
 
 
 \subsection{Noise Measurements}
-In order to verify if the design specifications are met, noise measurements carries out both at testbench and at the LSC NEXT installation. The results are shown in the table \ref{tab:noise}. 
+In order to verify that the design specifications are met, noise measurements have been carried out both at testbench and at LSC NEXT installation. The results are shown in table \ref{tab:noise}. 
 
 \begin{table*}[ht]
 	\caption{Noise Measurements (in $LSB_{rms}$)}
@@ -347,7 +347,7 @@ HPF^{-1}(t)&=\delta(t)+\frac{1}{\tau} \int_{0}^{t} dt
 
 \par However, the low frequency zero introduced by the PMT base interaction adds a low amount of DC to the theoretically AC coupled output signal of the FEE. In order to nullify this effect a high pass filter (cleaning filter) with a cutoff frequency equal to the frequency of this zero is introduced previous to the Digital BaseLine Restoration (DBLR) algorithm. This completely cancels the DC effect so that the reconstructed signal shows no baseline shift at the end. 
 
-\par Since the BLR algorithm uses an accumulator, it might be sensitive to noise and its effects must be studied not only as simple noise equivalent but also taking into account the effect of different frequency components. In case a non zero mean noise appears, the accumulator might get saturated. Typically the accumulator should end the deconvolution process in an empty state, however, the residue low frequency components of the noise makes a small residue remain in the accumulator at the end. Due to finite sampling of the signals residue is not always random. For instance in a burst of short signals (photoelectrons) this residue tends to be positive because the pulses have a higher positive lobe. As a consequence the accumulator starts to rise without limit introducing a baseline shift in the output signal.
+\par Since the BLR algorithm uses an accumulator, it might be sensitive to noise and its effects must be studied not only as simple noise equivalent but also taking into account the effect of different frequency components. In case a non zero mean noise appears, the accumulator might get saturated. Typically the accumulator should end the deconvolution process in an empty state, however, low frequency components of the noise makes a small residue remain in the accumulator at the end. Due to finite sampling of the signals residue is not always random. For instance in a burst of short signals (photoelectrons) this residue tends to be positive because the pulses have a higher positive lobe. As a consequence the accumulator starts to rise without limit introducing a baseline shift in the output signal.
 
 \par This novel DBLR algorithm introduces a control based on a smoothing function to deplete the residue remaining in the accumulator after a pulse reconstruction. The algorithm flowchart is shown in figure~\ref{fig:BLR_acc_algor}. In this algorithm the reconstruction process is started independently from the pulse start, and can be working indefinitely. The control relies on the accumulator operations that can be \emph{Update} or \emph{Discharge}. When the DAQ signal rises above a  threshold or the accumulator value is above another threshold (which is the condition for an active pulse) the accumulator is updated as in the original algorithm. However, when none of those conditions are met, which means that there is no active signal pulse, the accumulator is forced to a controlled discharge state. This discharge operation is carried out following a smooth curve so that the reconstructed signal shows no jumps or discontinuities.
 
@@ -366,14 +366,14 @@ HPF^{-1}(t)&=\delta(t)+\frac{1}{\tau} \int_{0}^{t} dt
 
 \par A similar version of the DBLR algorithm, introduced in subsection \ref{Digi_base_res} and shown on figure \ref{fig:BLR_acc_algor} has been implemented. This DBLR block is activated whenever the input signal rises above a threshold thus producing an output signal with its baseline completely restored. The threshold  is defined using signal baseline as a reference which requires a precise on-line baseline computation mechanism. A moving average filter has been used in this implementation. In order to avoid baseline shifts due to residues remaining in the accumulator, and further simplify the logic and use of FPGA resources in the DAQ and trigger modules, the control mechanism makes use of a simple linear smoothing function. As in the original algorithm, in case the accumulator is not completely empty when the reconstruction process ends, it must be automatically flushed.
 
-\par The DBLR algorithm has been implemented in a Xilinx Virtex-6 FPGA (XC6VLX240T-1ff1156). There is a DBLR block per channel (12 PMT channels per ATCA-FEC module), and a preceding cleaning filter, both configurable. The implemented algorithm and the cleaning filter have been implemented in a 42-bit fixed point format (Q11.30). The format has been selected as a tradeoff between algorithm stability and physical resources used.
+\par The DBLR algorithm has been implemented in a Xilinx Virtex-6 FPGA (XC6VLX240T-1ff1156). There is a DBLR block per channel (12 PMT channels per ATCA-FEC module), and a preceding cleaning filter, both configurable. The implemented algorithm and the cleaning filter have been implemented in a 42-bit fixed point format (Q11.30). The format has been selected as a trade-off between algorithm stability and physical resources used.
 
 
 \section{Conclusion}
 
-\par Finally the PMT base was designed and fabricated with the balance between the best possible response and radiopurity. After all the materials involved in the base were screened, we conclude that the level of radiopurity is good for us.  This way we accomplish the radiopurity requirements as well as the electronics requirements.
+\par Finally PMT base was designed and fabricated with the balance between the best possible response and radiopurity. After all the materials involved in the base were screened, we conclude that the level of radiopurity is good for us.  This way we accomplish the radiopurity requirements as well as the electronics requirements.
 
-\par Regarding the front-end electronics, we simulated, designed, manufactured, mounted, tested and we obtained the results that we expected. Once the electronics results were validated as good, we proceeded to build a simulation model. After that, we started with the digital baseline restoration process.
+\par Regarding front-end electronics, we simulated, designed, manufactured, mounted, tested and obtained the results that we expected. Once the electronics results were validated as good, we proceeded to build a simulation model. After that, we started with the digital baseline restoration process.
 
 \par The digital baseline reconstruction approach has been designed to reduce front-end electronics complexity thus improving its performance in terms of noise and linearity. Therefore the baseline recovery operation is computed in the digital domain where signal to noise ratio gets hardly affected.
 

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  6 FEB 2018 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  6 FEB 2018 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**EP_article_curro_6feb_13h.tex
-(./EP_article_curro_6feb_13h.tex
+**EP_article.tex
+(./EP_article.tex
 LaTeX2e <2017-04-15>
 Babel <3.16> and hyphenation patterns for 4 language(s) loaded.
 (/home/viherbos/texmf/tex/latex/elsarticle/elsarticle.cls
@@ -79,8 +79,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@enLab=\toks16
 \@sep=\skip43
 \@@sep=\skip44
-
-(./EP_article_curro_6feb_13h.spl)
+ (./EP_article.spl)
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
@@ -89,7 +88,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count93
 )
 \splwrite=\write3
-\openout3 = `EP_article_curro_6feb_13h.spl'.
+\openout3 = `EP_article.spl'.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1483,8 +1482,8 @@ Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 ) (./Commands.tex)
-(./EP_article_curro_6feb_13h.aux)
-\openout1 = `EP_article_curro_6feb_13h.aux'.
+(./EP_article.aux)
+\openout1 = `EP_article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -1502,8 +1501,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 29.
 LaTeX Font Info:    Try loading font information for LGR+cmr on input line 29.
-
-(/home/viherbos/texmf/tex/latex/cbfonts-fd/lgrcmr.fd
+ (/home/viherbos/texmf/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 29.
@@ -1592,12 +1590,11 @@ LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
 
-(./EP_article_curro_6feb_13h.out) (./EP_article_curro_6feb_13h.out)
+(./EP_article.out) (./EP_article.out)
 \@outlinefile=\write6
-\openout6 = `EP_article_curro_6feb_13h.out'.
+\openout6 = `EP_article.out'.
 
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
@@ -1836,6 +1833,11 @@ Underfull \hbox (badness 3646) in paragraph at lines 102--103
  []
 
 
+Underfull \hbox (badness 1264) in paragraph at lines 102--103
+\T1/lmr/m/n/10 with a 12-cm thick copper cap to shield the
+ []
+
+
 Underfull \hbox (badness 4595) in paragraph at lines 106--107
 []\T1/lmr/m/n/10 PMT bases must meet specifications such
  []
@@ -1881,14 +1883,19 @@ Underfull \hbox (badness 5431) in paragraph at lines 119--120
 []\T1/lmr/m/n/10 A trade-off between radiopurity limits [[]]
  []
 
-<./figures/base_sch.png, id=121, 1431.3475pt x 369.38pt>
+<./figures/base_sch.png, id=120, 654.2844pt x 142.131pt>
 File: ./figures/base_sch.png Graphic file (type png)
 <use ./figures/base_sch.png>
 Package pdftex.def Info: ./figures/base_sch.png  used on input line 123.
-(pdftex.def)             Requested size: 468.0pt x 120.77415pt.
+(pdftex.def)             Requested size: 468.0pt x 101.66408pt.
 
-Overfull \hbox (17.73851pt too wide) in paragraph at lines 134--143
- [] 
+Underfull \hbox (badness 1112) in paragraph at lines 147--148
+\T1/lmr/m/n/10 using as criteria a 1% linearity and a worst-
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 147--148
+\T1/lmr/m/n/10 circuit, cabling and front-end electronics) and
  []
 
 <./figures/diagrama.png, id=122, 382.42876pt x 500.87125pt>
@@ -1902,7 +1909,7 @@ File: ./figures/AC_diagram.png Graphic file (type png)
 Package pdftex.def Info: ./figures/AC_diagram.png  used on input line 162.
 (pdftex.def)             Requested size: 187.19714pt x 114.66095pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2717) has occurred while \output is active []
 
 <./figures/LED_testbench1.png, id=124, 1074.0125pt x 287.0725pt>
 File: ./figures/LED_testbench1.png Graphic file (type png)
@@ -1924,9 +1931,8 @@ Underfull \hbox (badness 1377) in paragraph at lines 187--188
 \T1/lmr/m/n/10 among stages. The measured linearity [][][] for
  []
 
-[3 <./figures/AC_diagram.png> <./figures/LED_testbench1.png>] [4 <./figures/bas
-e_sch.png> <./figures/diagrama.png> <./figures/5C_base.png>]
-<./figures/7C_layout.pdf, id=147, 221.628pt x 177.7842pt>
+[3 <./figures/AC_diagram.png> <./figures/LED_testbench1.png>]
+<./figures/7C_layout.pdf, id=139, 221.628pt x 177.7842pt>
 File: ./figures/7C_layout.pdf Graphic file (type pdf)
 <use ./figures/7C_layout.pdf>
 Package pdftex.def Info: ./figures/7C_layout.pdf  used on input line 193.
@@ -1936,7 +1942,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--202
 []\T1/lmr/m/n/10 Front-End Electronics and complementary
  []
 
-<./figures/FEE_simple.png, id=150, 458.71375pt x 210.7875pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./figures/base_sch.png> <./figures/diagrama.png> <./figures/5C_base.png>]
+<./figures/FEE_simple.png, id=151, 458.71375pt x 210.7875pt>
 File: ./figures/FEE_simple.png Graphic file (type png)
 <use ./figures/FEE_simple.png>
 Package pdftex.def Info: ./figures/FEE_simple.png  used on input line 220.
@@ -1946,12 +1956,12 @@ Underfull \hbox (badness 1789) in paragraph at lines 222--222
 []\T1/lmr/m/n/8 Figure 9: |Grounded Cathode Equivalent Circuit and
  []
 
-<./figures/FEE_PMT.png, id=153, 358.33875pt x 204.01219pt>
+<./figures/FEE_PMT.png, id=154, 358.33875pt x 204.01219pt>
 File: ./figures/FEE_PMT.png Graphic file (type png)
 <use ./figures/FEE_PMT.png>
 Package pdftex.def Info: ./figures/FEE_PMT.png  used on input line 231.
 (pdftex.def)             Requested size: 140.40143pt x 79.93488pt.
-<./figures/FEE_PMT_simple.png, id=154, 457.71pt x 210.7875pt>
+<./figures/FEE_PMT_simple.png, id=155, 457.71pt x 210.7875pt>
 File: ./figures/FEE_PMT_simple.png Graphic file (type png)
 <use ./figures/FEE_PMT_simple.png>
 Package pdftex.def Info: ./figures/FEE_PMT_simple.png  used on input line 233.
@@ -1968,12 +1978,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 244.
 
-[5 <./figures/7C_layout.pdf> <./figures/FEE_simple.png>]
+[5 <./figures/7C_layout.pdf> <./figures/FEE_simple.png> <./figures/FEE_PMT.png>
+ <./figures/FEE_PMT_simple.png>]
 Underfull \hbox (badness 2229) in paragraph at lines 248--249
 []\T1/lmr/m/n/10 Such high value resistors may amplify low
  []
 
-<./figures/tau_badidea.png, id=180, 642.4pt x 481.8pt>
+<./figures/tau_badidea.png, id=183, 642.4pt x 481.8pt>
 File: ./figures/tau_badidea.png Graphic file (type png)
 <use ./figures/tau_badidea.png>
 Package pdftex.def Info: ./figures/tau_badidea.png  used on input line 252.
@@ -1998,12 +2009,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 264--265
 \T1/lmr/m/n/10 capacitor has a self resonant frequency (SRF)
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./figures/FEE_PMT.png> <./figures/FEE_PMT_simple.png> <./figures/tau_badid
-ea.png>]
-<./figures/FEE_simple_scheme.pdf, id=194, 808.02113pt x 242.76326pt>
+<./figures/FEE_simple_scheme.pdf, id=185, 808.02113pt x 242.76326pt>
 File: ./figures/FEE_simple_scheme.pdf Graphic file (type pdf)
 <use ./figures/FEE_simple_scheme.pdf>
 Package pdftex.def Info: ./figures/FEE_simple_scheme.pdf  used on input line 27
@@ -2014,7 +2020,7 @@ Overfull \hbox (35.40143pt too wide) in paragraph at lines 271--272
  [] 
  []
 
-
+[6 <./figures/tau_badidea.png>]
 Underfull \hbox (badness 1478) in paragraph at lines 302--303
 \T1/lmr/m/n/10 model which can help in the development of
  []
@@ -2029,12 +2035,12 @@ Underfull \hbox (badness 1137) in paragraph at lines 302--303
 \T1/lmr/m/n/10 elements: the low frequency range which has
  []
 
-<./figures/FEEfull_freq.png, id=198, 642.4pt x 481.8pt>
+<./figures/FEEfull_freq.png, id=197, 642.4pt x 481.8pt>
 File: ./figures/FEEfull_freq.png Graphic file (type png)
 <use ./figures/FEEfull_freq.png>
 Package pdftex.def Info: ./figures/FEEfull_freq.png  used on input line 306.
 (pdftex.def)             Requested size: 187.19714pt x 140.39476pt.
-<./figures/NOISE.png, id=200, 508.299pt x 133.298pt>
+<./figures/NOISE.png, id=199, 508.299pt x 133.298pt>
 File: ./figures/NOISE.png Graphic file (type png)
 <use ./figures/NOISE.png>
 Package pdftex.def Info: ./figures/NOISE.png  used on input line 328.
@@ -2045,21 +2051,20 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 328--329
  []
 
 [7 <./figures/FEE_simple_scheme.pdf, page is rotated 90 degrees> <./figures/FEE
-full_freq.png>]
+full_freq.png> <./figures/NOISE.png>]
 Underfull \hbox (badness 1314) in paragraph at lines 350--351
 \T1/lmr/m/n/10 the accumulator should end the deconvolution
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./figures/NOISE.png>]
-<./figures/BLR_acc_algo.pdf, id=246, 284.81406pt x 370.25325pt>
+<./figures/BLR_acc_algo.pdf, id=237, 284.81406pt x 370.25325pt>
 File: ./figures/BLR_acc_algo.pdf Graphic file (type pdf)
 <use ./figures/BLR_acc_algo.pdf>
 Package pdftex.def Info: ./figures/BLR_acc_algo.pdf  used on input line 357.
 (pdftex.def)             Requested size: 187.19714pt x 243.35097pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
 Underfull \hbox (badness 2343) in paragraph at lines 365--366
 []\T1/lmr/m/n/10 In the NEXT experiment Data Acquisition
  []
@@ -2135,17 +2140,17 @@ Underfull \hbox (badness 1546) in paragraph at lines 378--379
  []
 
 [9 <./figures/BLR_acc_algo.pdf>]
-<./figures/7C_lin.pdf, id=265, 313.41089pt x 271.7352pt>
+<./figures/7C_lin.pdf, id=264, 313.41089pt x 271.7352pt>
 File: ./figures/7C_lin.pdf Graphic file (type pdf)
 <use ./figures/7C_lin.pdf>
 Package pdftex.def Info: ./figures/7C_lin.pdf  used on input line 384.
 (pdftex.def)             Requested size: 187.19714pt x 162.3043pt.
-<./figures/signal_preblr.png, id=266, 548.0475pt x 564.1075pt>
+<./figures/signal_preblr.png, id=265, 548.0475pt x 564.1075pt>
 File: ./figures/signal_preblr.png Graphic file (type png)
 <use ./figures/signal_preblr.png>
 Package pdftex.def Info: ./figures/signal_preblr.png  used on input line 394.
 (pdftex.def)             Requested size: 187.19714pt x 192.68059pt.
-<./figures/signal_blr.png, id=267, 552.0625pt x 563.10374pt>
+<./figures/signal_blr.png, id=266, 552.0625pt x 563.10374pt>
 File: ./figures/signal_blr.png Graphic file (type png)
 <use ./figures/signal_blr.png>
 Package pdftex.def Info: ./figures/signal_blr.png  used on input line 396.
@@ -2175,14 +2180,17 @@ Underfull \hbox (badness 6016) in paragraph at lines 403--404
 \T1/lmr/m/n/10 Laboratory) and DE-FG02-13ER42020 (Texas
  []
 
-[10 <./figures/7C_lin.pdf> <./figures/signal_preblr.png> <./figures/signal_blr.
-png>] (./EP_article_curro_6feb_13h.bbl
+(./EP_article.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--14
 \T1/lmr/m/n/8 URL []$\T1/lmtt/m/n/8 http : / / stacks . iop . org / 1748-[]0221
  / 7 / i = 06 / a =
  []
 
 
+Underfull \vbox (badness 2376) has occurred while \output is active []
+
+ [10 <./figures/7C_lin.pdf> <./figures/signal_preblr.png> <./figures/signal_blr
+.png>]
 Underfull \hbox (badness 5924) in paragraph at lines 29--34
 \T1/lmr/m/n/8 procedures and initial measurements[], Journal of
  []
@@ -2243,22 +2251,21 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
- (./EP_article_curro_6feb_13h.aux)
+ (./EP_article.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
-Package rerunfilecheck Info: File `EP_article_curro_6feb_13h.out' has not chang
-ed.
+Package rerunfilecheck Info: File `EP_article.out' has not changed.
 (rerunfilecheck)             Checksum: 5A99EF71DAF58751AD84FA8C5B8AF1AA;966.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
  ) 
 Here is how much of TeX's memory you used:
- 39018 strings out of 494882
- 836384 string characters out of 6179874
- 959317 words of memory out of 5000000
- 41709 multiletter control sequences out of 15000+600000
+ 39016 strings out of 494882
+ 836097 string characters out of 6179874
+ 958073 words of memory out of 5000000
+ 41708 multiletter control sequences out of 15000+600000
  602917 words of font info for 65 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 62i,10n,56p,10401b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,10n,56p,10386b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathex.enc} </home/viherbos/texmf/fonts/pk/ljfour/
@@ -2277,10 +2284,10 @@ m/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on EP_article_curro_6feb_13h.pdf (11 pages, 2476998 bytes).
+Output written on EP_article.pdf (11 pages, 2481498 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introducction}{}% 1
+\BOOKMARK [1][-]{section.2}{PMT base circuit}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Power dissipation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Optimizing the base circuit design}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Front-end electronics}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Grounded cathode connection}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{High \040constant value solution}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Digital Baseline Restoring alternative}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Noise Measurements}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.5}{Front-end electronics model for simulation}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.6}{Digital Baseline Restoration procedure}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Data acquisition system implementation}{}% 12
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 13
+\BOOKMARK [1][-]{section.6}{Acknowledgments}{}% 14
