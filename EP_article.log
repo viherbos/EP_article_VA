@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  6 FEB 2018 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  6 FEB 2018 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1804,37 +1804,37 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 93--94
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 106--107
+Underfull \hbox (badness 4595) in paragraph at lines 105--106
 []\T1/lmr/m/n/10 PMT bases must meet specifications such
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 106--107
+Underfull \hbox (badness 6016) in paragraph at lines 105--106
 \T1/lmr/m/n/10 as minimum heat dissipation, linearity and
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 106--107
+Underfull \hbox (badness 3354) in paragraph at lines 105--106
 \T1/lmr/m/n/10 low radioactivity. Their design follows the
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 106--107
+Underfull \hbox (badness 7522) in paragraph at lines 105--106
 \T1/lmr/m/n/10 manufacturer reference scheme for grounded
  []
 
 [2 <./figures/EP_detalle.png>]
-Overfull \hbox (17.73851pt too wide) in paragraph at lines 118--127
+Overfull \hbox (17.73851pt too wide) in paragraph at lines 117--126
  [] 
  []
 
 <./figures/diagrama.png, id=120, 382.42876pt x 500.87125pt>
 File: ./figures/diagrama.png Graphic file (type png)
 <use ./figures/diagrama.png>
-Package pdftex.def Info: ./figures/diagrama.png  used on input line 135.
+Package pdftex.def Info: ./figures/diagrama.png  used on input line 134.
 (pdftex.def)             Requested size: 210.59857pt x 275.82394pt.
 
-Underfull \hbox (badness 1082) in paragraph at lines 141--142
+Underfull \hbox (badness 1082) in paragraph at lines 140--141
 \T1/lmr/m/n/10 range for best linearity. In order to achieve
  []
 
@@ -1844,28 +1844,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./figures/AC_diagram.png, id=122, 673.51625pt x 412.54124pt>
 File: ./figures/AC_diagram.png Graphic file (type png)
 <use ./figures/AC_diagram.png>
-Package pdftex.def Info: ./figures/AC_diagram.png  used on input line 150.
+Package pdftex.def Info: ./figures/AC_diagram.png  used on input line 149.
 (pdftex.def)             Requested size: 187.19714pt x 114.66095pt.
 
-Underfull \hbox (badness 1048) in paragraph at lines 157--158
+Underfull \hbox (badness 1048) in paragraph at lines 156--157
 \T1/lmr/m/n/10 the required trade-off between radiopurity and
  []
 
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 166.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 165.
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 166.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 165.
 <./figures/temp_simulation.png, id=124, 576.7146pt x 455.301pt>
 File: ./figures/temp_simulation.png Graphic file (type png)
 <use ./figures/temp_simulation.png>
-Package pdftex.def Info: ./figures/temp_simulation.png  used on input line 171.
+Package pdftex.def Info: ./figures/temp_simulation.png  used on input line 170.
 
 (pdftex.def)             Requested size: 187.19714pt x 147.7835pt.
  [3 <./figures/diagrama.png> <./figures/AC_diagram.png>]
-LaTeX Font Info:    Try loading font information for LGR+lmr on input line 179.
+LaTeX Font Info:    Try loading font information for LGR+lmr on input line 178.
 
  (/home/viherbos/texmf/tex/latex/cbfonts-fd/lgrlmr.fd
 File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
@@ -1873,25 +1873,25 @@ File: lgrlmr.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Regular
 <./figures/LED_testbench1.png, id=133, 1074.0125pt x 287.0725pt>
 File: ./figures/LED_testbench1.png Graphic file (type png)
 <use ./figures/LED_testbench1.png>
-Package pdftex.def Info: ./figures/LED_testbench1.png  used on input line 185.
+Package pdftex.def Info: ./figures/LED_testbench1.png  used on input line 184.
 (pdftex.def)             Requested size: 234.0pt x 62.5429pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 185--186
+Overfull \hbox (12.0pt too wide) in paragraph at lines 184--185
  [] 
  []
 
 <./figures/5C_base.png, id=134, 449.68pt x 434.62375pt>
 File: ./figures/5C_base.png Graphic file (type png)
 <use ./figures/5C_base.png>
-Package pdftex.def Info: ./figures/5C_base.png  used on input line 203.
+Package pdftex.def Info: ./figures/5C_base.png  used on input line 202.
 (pdftex.def)             Requested size: 187.19714pt x 180.92918pt.
 
-Underfull \hbox (badness 1769) in paragraph at lines 209--210
+Underfull \hbox (badness 1769) in paragraph at lines 208--209
 []\T1/lmr/m/n/10 The linearity test bench has been used to
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 209--210
+Underfull \hbox (badness 1377) in paragraph at lines 208--209
 \T1/lmr/m/n/10 among stages. The measured linearity [][][] for
  []
 
@@ -1900,15 +1900,15 @@ ench1.png>]
 <./figures/7C_layout.pdf, id=150, 221.628pt x 177.7842pt>
 File: ./figures/7C_layout.pdf Graphic file (type pdf)
 <use ./figures/7C_layout.pdf>
-Package pdftex.def Info: ./figures/7C_layout.pdf  used on input line 213.
+Package pdftex.def Info: ./figures/7C_layout.pdf  used on input line 212.
 (pdftex.def)             Requested size: 210.59857pt x 168.93741pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 []\T1/lmr/m/n/10 Front-End Electronics (FEE) and
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 221--222
+Underfull \hbox (badness 1173) in paragraph at lines 220--221
 \T1/lmr/m/n/10 behavior and validate DSP techniques will be
  []
 
@@ -1918,62 +1918,62 @@ Underfull \vbox (badness 2564) has occurred while \output is active []
 <./figures/FEE_simple.png, id=153, 458.71375pt x 210.7875pt>
 File: ./figures/FEE_simple.png Graphic file (type png)
 <use ./figures/FEE_simple.png>
-Package pdftex.def Info: ./figures/FEE_simple.png  used on input line 240.
+Package pdftex.def Info: ./figures/FEE_simple.png  used on input line 239.
 (pdftex.def)             Requested size: 140.40143pt x 64.51685pt.
 
-Underfull \hbox (badness 1789) in paragraph at lines 242--242
+Underfull \hbox (badness 1789) in paragraph at lines 241--241
 []\T1/lmr/m/n/8 Figure 9: |Grounded Cathode Equivalent Circuit and
  []
 
 <./figures/FEE_PMT.png, id=156, 358.33875pt x 204.01219pt>
 File: ./figures/FEE_PMT.png Graphic file (type png)
 <use ./figures/FEE_PMT.png>
-Package pdftex.def Info: ./figures/FEE_PMT.png  used on input line 251.
+Package pdftex.def Info: ./figures/FEE_PMT.png  used on input line 250.
 (pdftex.def)             Requested size: 140.40143pt x 79.93488pt.
 <./figures/FEE_PMT_simple.png, id=157, 457.71pt x 210.7875pt>
 File: ./figures/FEE_PMT_simple.png Graphic file (type png)
 <use ./figures/FEE_PMT_simple.png>
-Package pdftex.def Info: ./figures/FEE_PMT_simple.png  used on input line 253.
+Package pdftex.def Info: ./figures/FEE_PMT_simple.png  used on input line 252.
 (pdftex.def)             Requested size: 140.40143pt x 64.65836pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 264.
+(hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tau' on input line 264.
+(hyperref)                removing `\tau' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 264.
+(hyperref)                removing `math shift' on input line 263.
 
 [5 <./figures/7C_layout.pdf> <./figures/FEE_simple.png>]
-Underfull \hbox (badness 2229) in paragraph at lines 268--269
+Underfull \hbox (badness 2229) in paragraph at lines 267--268
 []\T1/lmr/m/n/10 Such high value resistors may amplify low
  []
 
 <./figures/tau_badidea.png, id=183, 642.4pt x 481.8pt>
 File: ./figures/tau_badidea.png Graphic file (type png)
 <use ./figures/tau_badidea.png>
-Package pdftex.def Info: ./figures/tau_badidea.png  used on input line 272.
+Package pdftex.def Info: ./figures/tau_badidea.png  used on input line 271.
 (pdftex.def)             Requested size: 187.19714pt x 140.39476pt.
 
-Underfull \hbox (badness 1024) in paragraph at lines 280--281
+Underfull \hbox (badness 1024) in paragraph at lines 279--280
 \T1/lmr/m/n/10 be accurately recovered using a Digital Signal
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 280--281
+Underfull \hbox (badness 1675) in paragraph at lines 279--280
 \T1/lmr/m/n/10 high impedance nodes such as the associated
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 282--283
+Underfull \hbox (badness 1406) in paragraph at lines 281--282
 []\T1/lmr/m/n/10 Noise has been one of the most important
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 286--287
+Underfull \hbox (badness 1067) in paragraph at lines 285--286
 \T1/lmr/m/n/10 capacitor has a self resonant frequency (SRF)
  []
 
@@ -1983,32 +1983,32 @@ a.png>]
 File: ./figures/FEE_simple_scheme.pdf Graphic file (type pdf)
 <use ./figures/FEE_simple_scheme.pdf>
 Package pdftex.def Info: ./figures/FEE_simple_scheme.pdf  used on input line 29
-3.
+2.
 (pdftex.def)             Requested size: 257.40143pt x 77.33392pt.
 
-Overfull \hbox (35.40143pt too wide) in paragraph at lines 293--294
+Overfull \hbox (35.40143pt too wide) in paragraph at lines 292--293
  [] 
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 324--325
+Underfull \hbox (badness 1478) in paragraph at lines 323--324
 \T1/lmr/m/n/10 model which can help in the development of
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 324--325
+Underfull \hbox (badness 2573) in paragraph at lines 323--324
 \T1/lmr/m/n/10 other parts of the project. This time the
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 324--325
+Underfull \hbox (badness 1137) in paragraph at lines 323--324
 \T1/lmr/m/n/10 elements: the low frequency range which has
  []
 
 <./figures/FEEfull_freq.png, id=202, 642.4pt x 481.8pt>
 File: ./figures/FEEfull_freq.png Graphic file (type png)
 <use ./figures/FEEfull_freq.png>
-Package pdftex.def Info: ./figures/FEEfull_freq.png  used on input line 328.
+Package pdftex.def Info: ./figures/FEEfull_freq.png  used on input line 327.
 (pdftex.def)             Requested size: 187.19714pt x 140.39476pt.
 
 Underfull \vbox (badness 2564) has occurred while \output is active []
@@ -2018,15 +2018,15 @@ Efull_freq.png>]
 <./figures/NOISE.png, id=238, 508.299pt x 133.298pt>
 File: ./figures/NOISE.png Graphic file (type png)
 <use ./figures/NOISE.png>
-Package pdftex.def Info: ./figures/NOISE.png  used on input line 350.
+Package pdftex.def Info: ./figures/NOISE.png  used on input line 349.
 (pdftex.def)             Requested size: 234.0pt x 61.3646pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 350--351
+Overfull \hbox (12.0pt too wide) in paragraph at lines 349--350
  [] 
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 372--373
+Underfull \hbox (badness 1314) in paragraph at lines 371--372
 \T1/lmr/m/n/10 the accumulator should end the deconvolution
  []
 
@@ -2037,120 +2037,120 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./figures/BLR_acc_algo.pdf, id=250, 284.81406pt x 370.25325pt>
 File: ./figures/BLR_acc_algo.pdf Graphic file (type pdf)
 <use ./figures/BLR_acc_algo.pdf>
-Package pdftex.def Info: ./figures/BLR_acc_algo.pdf  used on input line 379.
+Package pdftex.def Info: ./figures/BLR_acc_algo.pdf  used on input line 378.
 (pdftex.def)             Requested size: 187.19714pt x 243.35097pt.
 
-Underfull \hbox (badness 2343) in paragraph at lines 387--388
+Underfull \hbox (badness 2343) in paragraph at lines 386--387
 []\T1/lmr/m/n/10 In the NEXT experiment Data Acquisition
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 389--390
+Underfull \hbox (badness 2443) in paragraph at lines 388--389
 []\T1/lmr/m/n/10 A similar version of the DBLR algorithm,
  []
 
 
-Underfull \hbox (badness 4832) in paragraph at lines 391--392
+Underfull \hbox (badness 4832) in paragraph at lines 390--391
 \T1/lmr/m/n/10 in a Xilinx Virtex-6 FPGA (XC6VLX240T-
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 396--397
+Underfull \hbox (badness 4660) in paragraph at lines 395--396
 []\T1/lmr/m/n/10 Finally the PMT base was designed and
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 396--397
+Underfull \hbox (badness 1552) in paragraph at lines 395--396
 \T1/lmr/m/n/10 fabricated with the balance between the best
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 396--397
+Underfull \hbox (badness 1681) in paragraph at lines 395--396
 \T1/lmr/m/n/10 materials involved in the base were screened,
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 396--397
+Underfull \hbox (badness 2495) in paragraph at lines 395--396
 \T1/lmr/m/n/10 we conclude that the level of radiopurity is
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 396--397
+Underfull \hbox (badness 2293) in paragraph at lines 395--396
 \T1/lmr/m/n/10 good for us. This way we accomplish the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 []\T1/lmr/m/n/10 Regarding the front-end electronics, we
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 398--399
+Underfull \hbox (badness 5331) in paragraph at lines 397--398
 \T1/lmr/m/n/10 simulated, designed, manufactured, mounted,
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 398--399
+Underfull \hbox (badness 2726) in paragraph at lines 397--398
 \T1/lmr/m/n/10 tested and we obtained the results that we
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 398--399
+Underfull \hbox (badness 2285) in paragraph at lines 397--398
 \T1/lmr/m/n/10 expected. Once the electronics results were
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 398--399
+Underfull \hbox (badness 2418) in paragraph at lines 397--398
 \T1/lmr/m/n/10 validated as good, we proceeded to build a
  []
 
 [9 <./figures/BLR_acc_algo.pdf>]
-Underfull \hbox (badness 1681) in paragraph at lines 400--401
+Underfull \hbox (badness 1681) in paragraph at lines 399--400
 []\T1/lmr/m/n/10 The digital baseline reconstruction approach
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 400--401
+Underfull \hbox (badness 1546) in paragraph at lines 399--400
 \T1/lmr/m/n/10 recovery operation is computed in the digital
  []
 
 <./figures/7C_lin.pdf, id=269, 313.41089pt x 271.7352pt>
 File: ./figures/7C_lin.pdf Graphic file (type pdf)
 <use ./figures/7C_lin.pdf>
-Package pdftex.def Info: ./figures/7C_lin.pdf  used on input line 406.
+Package pdftex.def Info: ./figures/7C_lin.pdf  used on input line 405.
 (pdftex.def)             Requested size: 187.19714pt x 162.3043pt.
 <./figures/signal_preblr.png, id=270, 548.0475pt x 564.1075pt>
 File: ./figures/signal_preblr.png Graphic file (type png)
 <use ./figures/signal_preblr.png>
-Package pdftex.def Info: ./figures/signal_preblr.png  used on input line 416.
+Package pdftex.def Info: ./figures/signal_preblr.png  used on input line 415.
 (pdftex.def)             Requested size: 187.19714pt x 192.68059pt.
 <./figures/signal_blr.png, id=271, 552.0625pt x 563.10374pt>
 File: ./figures/signal_blr.png Graphic file (type png)
 <use ./figures/signal_blr.png>
-Package pdftex.def Info: ./figures/signal_blr.png  used on input line 418.
+Package pdftex.def Info: ./figures/signal_blr.png  used on input line 417.
 (pdftex.def)             Requested size: 187.19714pt x 190.94579pt.
 
-Underfull \hbox (badness 2165) in paragraph at lines 425--426
+Underfull \hbox (badness 2165) in paragraph at lines 424--425
 \T1/lmr/m/n/10 European Research Council (ERC) under the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 \T1/lmr/m/n/10 FEDER through the program COMPETE,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 \T1/lmr/m/n/10 project PTDC/FIS/103860/2008; the U.S.
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 425--426
+Underfull \hbox (badness 1163) in paragraph at lines 424--425
 \T1/lmr/m/n/10 AC02- 07CH11359 (Fermi National Accelerator
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 425--426
+Underfull \hbox (badness 6016) in paragraph at lines 424--425
 \T1/lmr/m/n/10 Laboratory) and DE-FG02-13ER42020 (Texas
  []
 
@@ -2217,17 +2217,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--59
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 433.
  [11
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
  (./EP_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
 Package rerunfilecheck Info: File `EP_article.out' has not changed.
 (rerunfilecheck)             Checksum: ED91A0EC50808491718510034497FDDB;975.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 433.
  ) 
 Here is how much of TeX's memory you used:
  39018 strings out of 494882
