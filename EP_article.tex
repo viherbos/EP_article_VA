@@ -103,12 +103,8 @@ The most important design requirement for the energy plane is linearity over the
 
 \section {PMT base circuit}
 
-% Te marco los cambios en comentarios
-%Given as reference the scheme provided by Hamamatsu and take into account ours specifications, as dissipate the minimum heat as possible and grounded cathode configuration for safety reasons, the base were designed.
 \par PMT bases must meet specifications such as minimum heat dissipation, linearity and low radioactivity. Their design follows the manufacturer reference scheme for grounded cathode connection (fig.~\ref{fig:grounded_cathode}) since the whole detector structure must be connected to earth for electrical safety reasons.
 
-
-%\par Using scheme shown in figure with the static power constrain in mind, a lower limit for the sum of all the series resistor can be found. Since the manufacturer recommends a set o resistor ratios, the values for base resistors are shown in \ref{tab:R_C_values}. With this values the heat dissipation obtained is in the range [30- 40]~mW. It depends on the voltage supplied. In order to increase linearity and provide the dynodes of the PMT with the required currents a certain number of resistor chain stages needs to be backed by capacitors.
 \par Taking into account static power consumption constrains a lower limit for resistor values can be established. Manufacturer recommended ratios between dynodes voltages allow us to define a set of values for base resistors (table \ref{tab:R_C_values}). Total power dissipation for each base circuit depends on the exact high voltage supplied to the PMT and will lie in the range of [30-40]~mW. 
 
 \par PMT base circuit must provide enough charge for the PMT with negligible change in dynode-to-dynode voltage in any situation. Changes in these voltages introduce a time varying gain which acts as a nonlinear distortion mechanism and has a strong effect on PMT linearity. As a consequence in order to provide PMT dynodes with the required charge a certain number of resistor chain stages needs to be backed by capacitors. Table \ref{tab:R_C_values} shows required capacitors as well as their values. 
