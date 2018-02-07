@@ -204,18 +204,29 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \subsection{Grounded cathode connection}
 
-\par The use of an AC coupling scheme implies a high pass filter (HPF) will be created. Such a filter blocks DC component and attenuates frequency components below the cutoff frequency ($f_{cutoff}$). The whole model of FEE includes (see figure \ref{fig:FEE_PMT} (a) last stage effect of the base \mbox{((R2 parallel with C1) + R1)} by the pseudodifferential connection. In order to reduce complexity we assume R2 has such a high value that it can be neglected (figure \ref{fig:FEE_PMT} (b). The PMT is modelled as a simple current source model. The Laplace transfer function of the whole system can be obtained as: (eq. \ref{eq:1})
+\par The use of an AC coupling scheme implies a high pass filter (HPF) will be created. Such a filter blocks DC component and attenuates frequency components below the cutoff frequency ($f_{cutoff}$). The whole model of FEE includes (see figure \ref{fig:FEE_PMT} (a) last stage effect of the base \mbox{((R2 parallel with C1) + R1)} by the pseudodifferential connection. In order to reduce complexity we assume R2 has such a high value that it can be neglected (figure \ref{fig:FEE_PMT} (b). The PMT is modelled as a simple current source model. The Laplace transfer function of the whole system can be obtained as (eq. \ref{eq:1}) and its $f_{cutoff}$ can be approximated to (eq. \ref{fcutoff}) since C1 is greater than C2.  
+
+%\begin{equation}
+%\frac{v_O}{i_I}=A\frac{Z_{in}R_1}{Z_{in}+R_1}\frac{(R_1+Z_{in})C_2s}{1+(R_1+Z_{in})C_2s}
+%\label{eq:1}
+%\end{equation}
 
 \begin{equation}
-\frac{v_O}{i_I}=A\frac{Z_{in}R_1}{Z_{in}+R_1}\frac{(R_1+Z_{in})Cs}{1+(R_1+Z_{in})Cs}
+\frac{v_O}{i_I} = \frac{Z_{in}}{(1+\frac{C_1}{C_2})}\frac{1+R_1C_1s}{1+\frac{(R_1+Z_{in})C_1}{(1+\frac{C1}{C2})}s} 
 \label{eq:1}
 \end{equation}
 
+
 \begin{equation}
-f_{cutoff}=\frac{1}{(R_1+Z_{in})C_2.2\pi}
+f_{cutoff}=\frac{1}{\frac{(R_1+Z_{in})C_1}{1+\frac{C1}{C2}}.2\pi} \approx \frac{1}{(R_1+Z_{in})C_2.2\pi}
+\label{fcutoff}
 \end{equation}
 
-PMT base capacitors can exchange some charge with the coupling capacitor, so they should be included in the model. Using an equivalent circuit shown in figure~\ref{fig:FEE_PMT} (a) which can be even further simplified (b), the equations shown in eq. \ref{eq:full_fee} arise. Thus the original high pass filter turns into a pole/zero combination as shown in the low frequency range of the final FEE frequency response.
+\begin{equation}
+f_{LFzero}=\frac{1}{R_1 C_1.2\pi}
+\label{fzero}
+\end{equation}
+
 
 \begin{figure}[!tbp]
 	\centering
@@ -226,10 +237,17 @@ PMT base capacitors can exchange some charge with the coupling capacitor, so the
 	\label{fig:FEE_PMT}
 \end{figure}
 
-\begin{equation}
-\frac{v_O}{i_I} = \frac{Z_{in}}{(1+\frac{C_1}{C_2})}\frac{1+R_1C_1s}{1+\frac{(R_1+Z_{in})C_1}{(1+\frac{C1}{C2})}s} 
-\label{eq:full_fee}
-\end{equation}
+
+\par As stated in (eq. \ref{eq:1}) HPF is modified by a zero at a lower frequency  ($f_{LFzero}$) shown in (eq. \ref{fzero}) due to base circuit effect. The zero effect reduces low frequency range attenuation and modifies FEE frequency response whose final modulus and phase are shown in (fig. \ref{fig:FEE_PMT}) .
+
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{./figures/FEEfull_freq.png}
+		\caption{FEE Full Frequency Response.}
+		\label{fig:Full_Freq}
+	\end{center}
+\end{figure}
 
 
 \subsection {High $\tau$ constant value solution}
@@ -292,16 +310,7 @@ Noise specs have been fulfilled with a worst case total noise of 0.8 LSB. The th
 \subsection{Front-end electronics model for simulation}
 Once the design has been validated through real measurements it is important to build a simulation model which can help in the development of other parts of the project. This time the model has a high level of abstraction in order to be easily integrated with the software analysis modules, Python language with help of Numpy-Scipy libraries. The model comprises two different elements: the low frequency range which has already been developed (eq. \ref{eq:full_fee}) plus a fourth order low pass filter (due to the required shaping) with the right gain factor. The model response has been checked against SPICE simulations of the implemented FEE (figure~\ref{fig:Full_Freq}).
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=0.4\textwidth]{./figures/FEEfull_freq.png}
-		\caption{FEE Full Frequency Response.}
-		\label{fig:Full_Freq}
-	\end{center}
-\end{figure}
-
-
-Noise generation is introduced in the system to resemble the noise behavior of the real system, taking into account the filtering effect of every part. This is to say that for instance, the input equivalent noise of the FEE has been increased to simulate the observed effect given the 3~MHz bandwidth. The noise equivalent model of the FEE is shown in fig. \ref{fig:noise_eq} as well as the noise equations relative to the different noise contributions:
+\par Noise generation is introduced in the system to resemble the noise behavior of the real system, taking into account the filtering effect of every part. This is to say that for instance, the input equivalent noise of the FEE has been increased to simulate the observed effect given the 3~MHz bandwidth. The noise equivalent model of the FEE is shown in fig. \ref{fig:noise_eq} as well as the noise equations relative to the different noise contributions:
 
 \begin{align}  
 GAIN &= FEE_{GAIN}.DAQ_{GAIN} \\ 
