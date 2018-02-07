@@ -130,7 +130,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \subsection {Optimizing the base circuit design}
 
-\par In order to enhance output signal quality and decrease distortion, resistors R12 and R14 in figure\ref{fig:BASE} are suggested by the manufacturer to limit the ringing effects due to impedance mismatch in dynodes connections. On the other hand resistors R16 and R17 (equivalent to R1 in figure~\ref{fig:grounded_cathode}) isolate anode terminal from HV connection allowing signal output generation prior to AC coupling capacitor (C2 in figure~\ref{fig:grounded_cathode}). 
+\par In order to enhance output signal quality and decrease distortion, resistors R12 and R14 in figure \ref{fig:BASE} are suggested by the manufacturer to limit the ringing effects due to impedance mismatch in dynodes connections. On the other hand resistors R16 and R19 (equivalent to R1 in figure~\ref{fig:grounded_cathode}) isolate anode terminal from HV connection allowing signal output generation prior to AC coupling capacitor (C2 in figure~\ref{fig:grounded_cathode}). 
 
 \par The most important design requirement is linearity over the whole dynamic range, spanning from a single photon up to 100k photons. Signal length in NEW can vary from a few microseconds up to $\sim$150~\textmu s. The base circuit must provide enough charge for the PMT with negligible change in dynode-to-dynode voltage in any situation. Changes in these voltages introduce a time varying gain which acts as a nonlinear distortion mechanism and has a strong effect on linearity. Since each dynode stage increases the gain by a given factor (based on the geometry and characteristics of the PMT) the highest voltage drops will be located at the last stages where the amount of charge demanded by the dynodes is higher. Therefore, starting from the anode, a number of stages will be backed with capacitors (charge storages) to stabilize dynode voltages. 
  
@@ -175,7 +175,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 \end{figure}
 
 
-\par In the test bench, a signal generator introduces a squere voltage pulse with very short rise and fall edges into the LED (435~nm centered radiation spectrum). The amount of photons being generated is proportional to the length of the pulse. In order to avoid LED switching effects the minimum pulse length is 20~\textmu s (the setting time of the LED is in order of 1~us). The effect of LED output fluctuation is limited by averaging over 200 samples for each device under test. Additionally, a set of 90\% attenuation optical filters were used directly coupled to the LED.
+\par In the test bench, a signal generator introduces a square voltage pulse with very short rise and fall edges into the LED (435~nm centered radiation spectrum). The amount of photons being generated is proportional to the length of the pulse. In order to avoid LED switching effects the minimum pulse length is 20~\textmu s (the setting time of the LED is in order of 1~us). The effect of LED output fluctuation is limited by averaging over 200 samples for each device under test. Additionally, a set of 90\% attenuation optical filters were used directly coupled to the LED.
 
 \begin{figure}[H]
 	\begin{center}

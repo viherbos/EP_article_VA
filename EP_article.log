@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  7 FEB 2018 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  7 FEB 2018 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1864,8 +1864,8 @@ File: ./figures/AC_diagram.png Graphic file (type png)
 Package pdftex.def Info: ./figures/AC_diagram.png  used on input line 119.
 (pdftex.def)             Requested size: 187.19714pt x 114.66095pt.
 
-Underfull \hbox (badness 1253) in paragraph at lines 133--134
-\T1/lmr/m/n/10 ringing effects due to impedance mismatch in
+Underfull \hbox (badness 1137) in paragraph at lines 133--134
+[]\T1/lmr/m/n/10 5[] are suggested by the manufacturer to limit
  []
 
 LaTeX Font Info:    Try loading font information for LGR+lmr on input line 135.
@@ -2216,7 +2216,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
 Here is how much of TeX's memory you used:
  39011 strings out of 494882
  835938 string characters out of 6179874
- 959046 words of memory out of 5000000
+ 960046 words of memory out of 5000000
  41705 multiletter control sequences out of 15000+600000
  602917 words of font info for 65 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
@@ -2239,7 +2239,7 @@ m/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on EP_article.pdf (11 pages, 2475977 bytes).
+Output written on EP_article.pdf (11 pages, 2475980 bytes).
 PDF statistics:
  435 PDF objects out of 1000 (max. 8388607)
  355 compressed objects within 4 object streams
