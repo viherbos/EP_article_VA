@@ -22,7 +22,7 @@
 
 \modulolinenumbers[5]
 
-\journal{Nuclear Instruments and Methods in Physics Research Section A}
+\journal{Journal of Nuclear Instruments and Methods in Physics Research Section A}
 
 \bibliographystyle{EP_article}
 
@@ -36,14 +36,14 @@
 \title{NEXT-White experiment energy plane electronics design}
 
 \author[mymainaddress]{Vicente \'Alvarez} \corref{mycorrespondingauthor}
-\author[mysecondaryaddress]{V. Herrero}
-\author[mymainaddress]{J.J. Gomez-Cadenas} 
-\author[mysecondaryaddress]{R. Esteve} 
-\author[mysecondaryaddress]{A. Laing} 
-\author[mysecondaryaddress]{J. Rodríguez} 
-\author[mymainaddress]{M. Querol} 
-\author[mysecondaryaddress2]{F. Monrabal} 
-\author[mysecondaryaddress]{J. Toledo} 
+\author[mysecondaryaddress]{Vicente Herrero}
+\author[mymainaddress]{Juan Jos\'e Gomez Cadenas} 
+\author[mysecondaryaddress]{Ra\'ul Esteve} 
+\author[mysecondaryaddress]{Andrew Laing} 
+\author[mysecondaryaddress]{Javier Rodríguez} 
+\author[mymainaddress]{Marc Querol} 
+\author[mysecondaryaddress2]{Francesc Monrabal} 
+\author[mysecondaryaddress]{José Francisco Toledo} 
 \cortext[mycorrespondingauthor]{Corresponding author (vicente.alvarez@ific.uv.es)}
 
 \address[mymainaddress]{Instituto de Física Corpuscular(IFIC), CSIC \& Universitat de València \\ Calle Catedrático José Beltrán, 2, 46980 Paterna, Valencia, Spain} 
@@ -51,7 +51,7 @@
 \address[mysecondaryaddress2]{Departament of Physics, University of Texas at Arlington\\ Arlington, Texas 76019, USA}
 
 \begin{abstract}
-NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of  \XE\ , using PMTs for the energy measurement. The associated electronics have been designed and implemented in the NEXT-White (NEW) demonstrator not only aiming at excellent energy resolution, but also taking into account radiopurity limitations. The design was done to assure the required front-end electronics specifications such as linearity and low noise and also meet a low radioactivity level. For safety reasons, a grounded cathode configuration (AC coupling) has been used for the PMT biasing. This produces important low frequency noise effects. A detailed description of the analog electronics and required digital postprocesing to obtain a liner response and overcome AC coupling effects are provided.
+NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of  \XE\ , and therefore requires good level of radiopurity. To this end, the PMTs used for the energy measurement and their electronics have been designed and implemented in the NEXT-White (NEW) demonstrator not only considering the 1\% energy resolution required but taking into account radiopurity limitations. The design was done to assure the required front-end electronics specifications such as linearity and low noise and also meet a low radioactivity level. In order to reduce low frequency noise effects and enhance detector's security a grounded cathode connection has been used. A detailed description of the electronics and required signal postprocesing to obtain a liner response and overcome AC coupling effects are provided.
 
 \end{abstract}
 
@@ -84,8 +84,9 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \par A background of ${4\times10^{-4}}$~\ckky\ in the energy region of interest means the experiment is sensitive to a half life of up to ${6\times10^{25}}$~years after running for 3 effective years \cite{1029-8479,1748-0221-8-01-T01002}. The required background level is achievable thanks to passive shielding, background discrimination techniques based on charged particle tracking \cite{1029-8479,1748-0221-12-01-T01004} and a thorough material radiopurity control. 
 
-\par The energy plane of NEW consists of a 12~cm thick copper support plate with 12 sapphire windows brazed in copper flanges and then screwed to the copper plate (figure \ref{fig:detail}). A 12~cm thick copper cap is placed behind each PMT, to shield the fiducial volume. The energy plane will be held at vacuum levels of less than $10^{-4}$ mbar. Twelve \mbox{high-gain} PMTs from Hamamatsu(R11410-10 \cite{PMT}are optically coupled to the sapphire windows using NyoGel OCK-451, and held in place with a plastic support and spring. The external face of the windows is coated with tetraphenyl-butadiene (TPB) to shift the xenon VUV light to blue and coated with PDOT (poly(3,4-ethylenedioxythiophene)), a conductive polymer which stops the electric field from the TPC penetrating as far as the PMT dynodes. The twelve PMTs are located 12~cm behind the TPC cathode and cover approximately 30\% of its surface area. This level of coverage was chosen as a compromise between the need to collect as much light as possible and the need to minimize the number of sensors to reduce cost, technical complexity and radioactivity.  The selected model R11410-10 is a 3$"$ PMT specially developed for low-background operation, equipped with a synthetic fused silica window and a photocatode made of low temperature bialkali with high quantum efficiency. 
+\par The energy plane of NEW consists of a 12~cm thick copper support plate with 12 sapphire windows brazed in copper flanges and then screwed to the copper plate (figure \ref{fig:detail}). A 12~cm thick copper cap is placed behind each PMT, to shield the fiducial volume. The energy plane will be held at vacuum levels of less than $10^{-4}$ mbar. The twelve R11410-10 \cite{PMT} PMTs from Hamamatsu are optically coupled to the sapphire windows using NyoGel OCK-451, and held in place with a plastic support and spring. The external face of the windows is coated with tetraphenyl-butadiene (TPB) to shift the xenon VUV light to blue and coated with PDOT (poly(3,4-ethylenedioxythiophene)),  a conductive polymer which stops the electric field from the TPC penetrating as far as the PMT dynodes. The twelve PMTs are located 12~cm behind the TPC cathode and cover approximately 30\% of its surface area. This level of coverage was chosen as a compromise between the need to collect as much  light as possible and the need to minimize the number of sensors to reduce cost, technical complexity and radioactivity.  The selected model R11410-10 is a 3$"$ PMT specially developed for low-background operation, equipped with a synthetic fused silica window and a photocatode made of low temperature bialkali with high quantum efficiency. 
 
+\par The PMTs receive high voltage and have their signal extracted via kapton twisted cables connected to a feedthrough in the torispherical head of the pressure vessel. The distribution of signal and supply at each individual PMT is done by means of a Kapton circuit board (PMT base) which is covered with a copper cap and filled with epoxy. PMT bases are connected to the support plate to allow generated heat to be dissipated under vacuum conditions.
 
 \begin{figure}
   \begin{center}
@@ -95,57 +96,52 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
   \end{center}
 \end{figure}
 
-
+The most important design requirement for the energy plane is linearity over the whole dynamic range. In terms of linearity the worst situation is for long signals which could extend for more than 100 microseconds. In this case, the PMT base circuit must provide enough charge for the PMT with negligible change in dynode-to-dynode voltage. Changes in these voltages introduce a time varying gain which acts as a nonlinear distorsion mechanism and has a strong effect on PMT behaviour and linearity..  
 
 \section {PMT base circuit}
 
-\par The PMTs receive high voltage and have their signal extracted via kapton twisted cables connected to a feedthrough in the torispherical head of the pressure vessel. The distribution of signal and bias voltage at each individual PMT is done by means of a circular kapton circuit board (PMT base)with receptacles for the PMT pins and connections to the kapton twisted cables. The PMT base (fig.~\ref{fig:7C_layout}) is covered with thermal epoxy (Araldite 2011\textregistered) to avoid dielectric breakdown in moderate vacuum or in a N2 atmosphere, backed with a 12-cm thick copper cap to shield the detector against external radiation and connected to the support plate to allow generated heat to be dissipated under vacuum conditions.
+\par The design is made more challenging due to the required trade-off between radiopurity and linearity. The size and number of components must be carefully studied and limited so that the radioisotope budget is not exceeded without compromising the linearity of the PMT response and, thus, the final energy resolution.
+\par Moreover the whole structure must be connected to earth for electrical safety reasons, which implies a PMT grounded cathode connection scheme. In such a configuration the anode output must be AC coupled through an isolation capacitor since anode output DC voltage equals the high voltage (HV) being applied to the PMT (figure~\ref{fig:grounded_cathode}). As a consequence the AC coupling capacitor must be able to cope with the HV needed to provide the required gain in the PMT (typically from 1000 V to 1750 V).
 
-\par PMT bias voltage (1270 V) was established through a trade-off between single photon detection capability and manufacturer recommended high voltage range for best linearity.
-
-\par PMT bases must meet specifications such as minimum heat dissipation, linearity and low radioactivity. Their design follows the manufacturer's reference scheme for grounded cathode connection (fig.~\ref{fig:grounded_cathode}) since the whole detector structure must be connected to earth for electrical safety reasons. In this configuration, the anode output must be AC coupled through an isolation capacitor (typically rated from 1000 V to 1750 V) since anode output DC voltage equals the high voltage being applied to the PMT.
-
-\subsection {Power dissipation}
-
-\par Taking into account static power consumption constraints, a lower limit for resistor values can be established. Manufacturer recommended ratios between the twelve dynode voltages allow us to define a set of values for base resistors (table \ref{tab:R_C_values}). Figure fig.~\ref{fig:BASE} shows the actual PMT base circuit. Total power dissipation for each base circuit depends on the exact high voltage supplied to the PMT and will lie in the range of [30-40]~mW. Simulations with finite elements software (Comsol Multiphysics) have been carried out under vacuum condition, yielding a harmless 3~\degree{C} increase above ambient temeprature. This results was later confirmed in laboratory.
-
-
-\subsection {Optimizing the base circuit design}
-
-\par The most important design requirement is linearity over the whole dynamic range, spanning from a single photon up to 100k photons. Signal length in NEXT-NEW can vary from a few microseconds up to $\sim$150~\textmu s. The base circuit must provide enough charge for the PMT with negligible change in dynode-to-dynode voltage in any situation. Changes in these voltages introduce a time varying gain which acts as a nonlinear distortion mechanism and has a strong effect on PMT linearity. 
-
-\par Since each dynode stage increases the gain by a given factor (based on the geometry and characteristics of the PMT) the highest voltage drops will be located at the last stages where the amount of charge to be delivered by the PMT is higher. Therefore, starting from the last PMT stage, a number of stages will be backed with capacitors to meet the design goal. 
-
-\par A trade-off between radiopurity limits \cite{1029-8479}  (capacitors show a high activity in a number of radioisotopes) and linearity requires to carefully chose the minimum number of capacitors that allow to meet the linearity goal of a worst-case 1%. Table \ref{tab:R_C_values} shows required capacitors as well as their values.
-
-\begin{figure*}[ht]
-  \begin{center}
-   	 \includegraphics[width=\textwidth]{./figures/base_sch.png}    
-   	 \caption{NEW base electronic design}
-   	 \label{fig:BASE}
-  \end{center}
-\end{figure*}
-
-\begin{table*}[ht]
-\scriptsize
-	\caption{Resistor \& capacitors base values}
-	\label{tab:R_C_values}	
+\begin{figure}
 	\begin{center}
-		\begin{tabular}{ c | c | c | c | c | c | c | c | c | c | c | c | c | c | c |}
-			Dynodes & K & Dy1/G & Dy2 & Dy3 & Dy4 & Dy5 & Dy6 & Dy7 & Dy8 & Dy9 & Dy10 & Dy11 & Dy12 & P\\
-			\hline
-			Ratio & &  4 & 1.5 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 1 \\
-			\hline
-			Resistors & & 8M & 3M & 4M & 2M & 2M & 2M & 2M & 2M & 2M & 2M & 2M & 4M & 4M  \\
-			\hline
-			Capacitors &  &  &  &  &  &  &  &  &  &  &  & 2x 4,75uF & 3x 1,5uF & 2x 4,75uF  \\
-		\end{tabular}
+		\includegraphics[width=.4\textwidth]{./figures/AC_diagram.png}
+		\caption{Grounded Cathode PMT connection scheme}
+		\label{fig:grounded_cathode}
 	\end{center}
-\end{table*}
+\end{figure}
+
+\par The maximum allowable amount of heat to be dissipated by each base so that no disturbances are introduced in the rest of the detector has been established in 40 mW. In order to achieve this in vacuum they will be encased in thermal epoxy (Araldite 2011\textregistered) and connected via a copper cap to the support. This limit has been found through simulation in a finite element software (COMSOL) and verified in a test bench where a EP temperature of 24~\degree{C} was achieved with 21~\degree{C} of ambient temperature.
+ 
+ 
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{./figures/temp_simulation.png}
+    \caption{Simulation of temperature in Comsol Multiphysics}
+    \label{fig:temp_simu}
+  \end{center}
+\end{figure}
+
+\par Using scheme shown in figure~\ref{fig:grounded_cathode} with the static power constrain in mind, a lower limit for the sum of all the series resistor can be found. Since the manufacturer recommends a set o resistor ratios, the values for base resistors are shown in table (1). In order to increase linearity and provide the dynodes of the PMT with the required currents a certain number of resistor chain stages need to be backed by capacitors. An algorithm to find this number and capacitor values will be presented in next section.
 
 
-\par To reach the results above, SPICE simulations allowed to find out the required capacitor values, using as criteria a 1% linearity and a worst-case voltage drop of 0.1\% between dynodes. A linearity test bench (including the PMT, base circuit, cabling and front-end electronics) and the algorithm described in figure \ref{fig:Base_Sizing} were used to determine the number of capacitor-backed stages.
+\subsection {Test bench for linearity measurements}
 
+\par A test bench for linearity measurements was developed in order to test each component under NEW energy plane conditions. The test includes not only a PMT (with its base) but also the associated front-end electronics (FEE) due to the special characteristics of the signals captured and the high linearity required.  The dynamic range of every channel must cover from a single photon up to 100k photons. Moreover, signal length in NEXT can vary from a few microseconds up to $\sim$150~\textmu s which presents an additional challenge to electronics design.
+
+\par The linearity test bench makes use of a signal generator which introduces a voltage square pulse with very short rise and fall edges into the LED (435~nm centered radiation spectrum). The amount of photons being generated is proportional to the length of the pulse. In order to avoid LED switching effects the minimum pulse length is 20~\textmu s (the setting time of the LED is in order of 1~us). The effect of LED output fluctuation is limited by averaging over 200 samples for each device under test. Additionally, a set of 90\% attenuation optical filters were used directly coupled to the LED.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{./figures/LED_testbench1.png}
+		\caption{LED based PMT+FEE test bench for linearity measurements}
+		\label{fig:LED_testbench}
+	\end{center}
+\end{figure}
+
+\par PMT bias voltage was established through a trade-off between single photon detection capability and manufacturer recommended high voltage (HV) range for best linearity. In order to achieve sufficient SNR, electronics induced noise must be reduced. This imposes a practical limit to the amplifier's gain and demands the use of \mbox{high-gain} PMTs.
+
+\par The capacitors for the base were chosen using the algorithm described in figure \ref{fig:Base_Sizing} where the main goal is to get a worst case drop of 0.1\% in voltage between dynodes. Since each stage increases the gain by a given factor (based on the geometry and characteristics of the PMT) the highest voltage drops will be located at the last stages where the amount of charge to be delivered by the PMT is higher. Therefore starting from the last PMT stage, a certain number of stages will be backed with capacitors. 
 
 \begin{figure}
   \begin{center}
@@ -155,26 +151,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
   \end{center}
 \end{figure}
 
- 
-
-\begin{figure} [H]
-	\begin{center}
-		\includegraphics[width=.4\textwidth]{./figures/AC_diagram.png}
-		\caption{Grounded Cathode PMT connection scheme}
-		\label{fig:grounded_cathode}
-	\end{center}
-\end{figure}
-
-
-\par In the test bench, a signal generator introduces a squere voltage pulse with very short rise and fall edges into the LED (435~nm centered radiation spectrum). The amount of photons being generated is proportional to the length of the pulse. In order to avoid LED switching effects the minimum pulse length is 20~\textmu s (the setting time of the LED is in order of 1~us). The effect of LED output fluctuation is limited by averaging over 200 samples for each device under test. Additionally, a set of 90\% attenuation optical filters were used directly coupled to the LED.
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=0.5\textwidth]{./figures/LED_testbench1.png}
-		\caption{LED based PMT+FEE test bench for linearity measurements}
-		\label{fig:LED_testbench}
-	\end{center}
-\end{figure}
+\par In order to meet the radiopurity limits \cite{1029-8479} a first proposal based on a minimum of 2 stage coverage (5 capacitors to withstand the high voltage between terminals) has been tested. Although generally this design shows good linearity there remain some long-pulse-length signals with non-linear distortion in time  (figure \ref{fig:5C}). The output signal does not show a typical overload effect which would appear in the case of a usual fall in the gain value for high number of photons. The observed behaviour is related to a distortion mechanism that appears due to charge redistribution in the base capacitors. It is possible for a capacitor which has been depleted to drain charge from the capacitor previous to it in the chain. If the charge drained by the former is too high, voltage drops accumulate, affecting overall gain. The length of signal pulse able to generate this distortion depends on the time constants of each stage and may change with voltage distribution among stages.
 
 \begin{figure}
   \begin{center}
@@ -184,9 +161,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
   \end{center}
 \end{figure}
 
-\par A first proposal based on two stage coverage (5 capacitors to withstand the high voltage between terminals) was tested. Although generally this design shows good linearity, there remain some long-pulse-length signals with non-linear distortion in time (figure \ref{fig:5C}). The output signal does not show a typical overload effect which would appear in the case of a usual fall in the gain value for high number of photons. The observed behavior is related to a distortion mechanism that appears due to charge redistribution in the base capacitors. It is possible for a capacitor which has been depleted to drain charge from the capacitor previous to it in the chain. If the charge drained is too high, voltage drops accumulate, affecting overall gain. The length of signal pulse able to generate this distortion depends on the time constants of each stage and may change with voltage distribution among stages. The measured linearity  \footnote{Measured as the worst case deviation from the linear fit} for two stage configuration is 1.95\% for 100k photo electrons. 
-
-\par As a better capacitor coverage is required, a three-stage configuration is proposed. This circuit shows virtually no time distortion. The linearity fit gives a 0.38\% for 140k pe. which exceeds the initial requirements for linearity (less than 1\%).
+\par The measured linearity \footnote{Measured as the worst case deviation from the linear fit} is 1.95\% for 100k photo electrons. This means that a better capacitor coverage is required so a 3 stage coverage is proposed (figure~\ref{fig:7C_layout}). This circuit shows virtually no time distortion. The linearity fit gives a 0.38\% for 140k pe. which exceeds the initial requirements for linearity (less than 1\%).
 
 \begin{figure}
   \begin{center}
@@ -198,12 +173,11 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \section{Front-end electronics}
 
-\par Front-End Electronics and complementary Digital Signal Processing (DSP) techniques will be described in this section. Also data measurements taken in order to verify FEE behavior and validate DSP techniques will be presented. 
+\par Front-End Electronics (FEE) and complementary Digital Signal Processing (DSP) techniques will be described in this section. Also data measurements taken in order to verify FEE behavior and validate DSP techniques will be presented. 
 
+\subsection{Grounded cathode}
 
-\subsection{Grounded cathode connection}
-
-\par The use of an AC coupling scheme implies a high pass filter (HPF) will be created. Such a filter blocks DC component and attenuates frequency components below the cutoff frequency ($f_{cutoff}$). The whole model of FEE includes last stage effect of the base \mbox{((R2 parallel with C1) + R1)} by the pseudodifferential connection. In order to reduce complexity we assume R2 has such a high value that it can be neglected. Figure \ref{fig:GC_equivalent_circuit} shows the electrical equivalent circuit of the connection scheme with a simple current source model as the PMT. The Laplace transfer function of the whole system can be obtained as: (eq. \ref{eq:1})
+ The use of an AC coupling scheme implies a high pass filter (HPF) will be created. Such a filter blocks DC component and attenuates frequency components below the cutoff frequency ($f_{cutoff}$). The whole model of FEE includes last stage effect of the base \mbox{((R2 parallel with C1) + R1)} by the pseudodifferential conection. To reduce the complexity we assume R2 is much higher and we eliminate it. Figure \ref{fig:GC_equivalent_circuit} shows the electrical equivalent circuit of the connection scheme with a simple current source model as the PMT. The Laplace transfer function of the whole system can be obtained as: (eq. \ref{eq:1})
 
 \begin{equation}
 \frac{v_O}{i_I}=A\frac{Z_{in}R_1}{Z_{in}+R_1}\frac{(R_1+Z_{in})Cs}{1+(R_1+Z_{in})Cs}
