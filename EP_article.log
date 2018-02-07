@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  7 FEB 2018 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  7 FEB 2018 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1883,6 +1883,11 @@ Underfull \hbox (badness 1635) in paragraph at lines 135--136
 []\T1/lmr/m/n/10 Since each dynode stage increases the gain
  []
 
+
+Underfull \hbox (badness 1448) in paragraph at lines 135--136
+\T1/lmr/m/n/10 (charge storages) to stabilize dynode voltages.
+ []
+
 <./figures/base_sch.png, id=129, 654.2844pt x 142.131pt>
 File: ./figures/base_sch.png Graphic file (type png)
 <use ./figures/base_sch.png>
@@ -2217,7 +2222,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
 Here is how much of TeX's memory you used:
  39011 strings out of 494882
  835938 string characters out of 6179874
- 960046 words of memory out of 5000000
+ 959046 words of memory out of 5000000
  41705 multiletter control sequences out of 15000+600000
  602917 words of font info for 65 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
@@ -2240,7 +2245,7 @@ m/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on EP_article.pdf (11 pages, 2475772 bytes).
+Output written on EP_article.pdf (11 pages, 2475759 bytes).
 PDF statistics:
  433 PDF objects out of 1000 (max. 8388607)
  353 compressed objects within 4 object streams
