@@ -112,7 +112,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 \end{figure}
 
 
-\par PMT bases must meet specifications such as low heat dissipation, excellent linearity and low radioactivity. Their design follows the manufacturer's reference scheme for grounded cathode connection (fig.~\ref{fig:grounded_cathode}) since the whole detector structure must be connected to earth for electrical safety reasons. In this configuration, the anode output must be AC coupled through an isolation high-voltage capacitor since anode output DC voltage equals the high voltage being applied to the PMT. The resistor chain acts as a voltage divider, defining the dynode-to-dynode voltages. Total voltage across the PMT (+HV in fig.~\ref{fig:grounded_cathode}) is 1270 V, a trade-off between single photon detection capability and manufacturer's recommended high voltage range for best linearity.
+\par PMT bases must meet specifications such as low heat dissipation, excellent linearity and low radioactivity. Their design follows the manufacturer's reference scheme for grounded cathode connection (figure~\ref{fig:grounded_cathode}) since the whole detector structure must be connected to earth for electrical safety reasons. In this configuration, the anode output must be AC coupled through an isolation high-voltage capacitor since anode output DC voltage equals the high voltage being applied to the PMT. The resistor chain acts as a voltage divider, defining the dynode-to-dynode voltages. Total voltage across the PMT (+HV in figure~\ref{fig:grounded_cathode}) is 1270 V, a trade-off between single photon detection capability and manufacturer's recommended high voltage range for best linearity.
 
 \begin{figure} [H]
 	\begin{center}
@@ -125,12 +125,12 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \subsection {Power dissipation}
 
-\par Taking into account static power consumption constraints, a lower limit for resistor values can be established. Manufacturer recommended ratios between the twelve dynode voltages allow us to define a set of values for base resistors (R1-R11, R13, R15 and R18 in figure ~\ref{fig:BASE}, the actual PMT base circuit). Total power dissipation for each base depends on the exact high voltage supplied to the PMT and will lie in the range of [30-40]~mW. Simulations with finite elements software (Comsol Multiphysics) have been carried out to study the heat flow in vacuum condition, yielding a harmless 3~\degree{C} increase above ambient temperature. This results was later verified in laboratory.
+\par Taking into account static power consumption constraints, a lower limit for resistor values can be established. Manufacturer recommended ratios between the twelve dynode voltages allow us to define a set of values for base resistors (R1-R11, R13, R15 and R18 in figure~\ref{fig:BASE}, the actual PMT base circuit). Total power dissipation for each base depends on the exact high voltage supplied to the PMT and will lie in the range of [30-40]~mW. Simulations with finite elements software (Comsol Multiphysics) have been carried out to study the heat flow in vacuum condition, yielding a harmless 3~\degree{C} increase above ambient temperature. This results was later verified in laboratory.
 
 
 \subsection {Optimizing the base circuit design}
 
-\par In order to enhance output signal quality and decrease distortion, resistors R12 and R14 in figure ~\ref{fig:BASE} are suggested by the manufacturer to limit the ringing effects due to impedance mismatch in dynodes connections. On the other hand resistors R16 and R17 (equivalent to R1 in fig. \ref{fig:grounded_cathode}) isolate anode terminal from HV connection allowing signal output generation prior to AC coupling capacitor (C2 in fig. \ref{fig:grounded_cathode}). 
+\par In order to enhance output signal quality and decrease distortion, resistors R12 and R14 in figure\ref{fig:BASE} are suggested by the manufacturer to limit the ringing effects due to impedance mismatch in dynodes connections. On the other hand resistors R16 and R17 (equivalent to R1 in figure~\ref{fig:grounded_cathode}) isolate anode terminal from HV connection allowing signal output generation prior to AC coupling capacitor (C2 in figure~\ref{fig:grounded_cathode}). 
 
 \par The most important design requirement is linearity over the whole dynamic range, spanning from a single photon up to 100k photons. Signal length in NEW can vary from a few microseconds up to $\sim$150~\textmu s. The base circuit must provide enough charge for the PMT with negligible change in dynode-to-dynode voltage in any situation. Changes in these voltages introduce a time varying gain which acts as a nonlinear distortion mechanism and has a strong effect on linearity. Since each dynode stage increases the gain by a given factor (based on the geometry and characteristics of the PMT) the highest voltage drops will be located at the last stages where the amount of charge demanded by the dynodes is higher. Therefore, starting from the anode, a number of stages will be backed with capacitors (charge storages) to stabilize dynode voltages. 
  
@@ -163,7 +163,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 %\end{table*}
 
 
-\par The algorithm described in figure \ref{fig:Base_Sizing} was followed in order to reach the final circuit in figure ~\ref{fig:BASE}. SPICE simulations allow to find out the required capacitor values, using as criteria a worst-case voltage drop between dynodes of 0.1\%. A laboratory linearity test bench (including the PMT, base circuit, cabling and front-end electronics) determines the number of capacitor-backed stages to guarantee a 1\% linearity.
+\par The algorithm described in figure~\ref{fig:Base_Sizing} was followed in order to reach the final circuit in figure~\ref{fig:BASE}. SPICE simulations allow to find out the required capacitor values, using as criteria a worst-case voltage drop between dynodes of 0.1\%. A laboratory linearity test bench (including the PMT, base circuit, cabling and front-end electronics) determines the number of capacitor-backed stages to guarantee a 1\% linearity.
 
 
 \begin{figure}
@@ -193,7 +193,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
   \end{center}
 \end{figure}
 
-\par A first proposal based on two stage coverage (5 capacitors to withstand the high voltage between terminals) was tested. Although generally this design shows good linearity, there remain some long-pulse-length signals with non-linear distortion in time (figure \ref{fig:5C}). The output signal does not show a typical overload effect which would appear in the case of a usual fall in the gain value for high number of photons. The observed behavior is related to a distortion mechanism that appears due to charge redistribution in the base capacitors. It is possible for a capacitor which has been depleted to drain charge from the previous (left) capacitor in the chain. If the charge drained is too high, voltage drops accumulate, affecting overall gain. The length of signal pulse able to generate this distortion depends on the time constants of each stage and may change with voltage distribution among stages. The measured linearity \footnote{Measured as the worst case desviation from the linear fit} for two stage configuration is 1.95\% for 100k photo electrons. 
+\par A first proposal based on two stage coverage (5 capacitors to withstand the high voltage between terminals) was tested. Although generally this design shows good linearity, there remain some long-pulse-length signals with non-linear distortion in time (figure~\ref{fig:5C}). The output signal does not show a typical overload effect which would appear in the case of a usual fall in the gain value for high number of photons. The observed behavior is related to a distortion mechanism that appears due to charge redistribution in the base capacitors. It is possible for a capacitor which has been depleted to drain charge from the previous (left) capacitor in the chain. If the charge drained is too high, voltage drops accumulate, affecting overall gain. The length of signal pulse able to generate this distortion depends on the time constants of each stage and may change with voltage distribution among stages. The measured linearity \footnote{Measured as the worst case desviation from the linear fit} for two stage configuration is 1.95\% for 100k photo electrons. 
 
 \par As a better capacitor coverage is required, a three-stage configuration is proposed. This circuit shows virtually no time distortion. The linearity fit gives a 0.38\% for 140k photo electrons, exceeding the initial requirements for linearity (less than 1\%).
 
@@ -205,7 +205,7 @@ NEXT-White (NEW) experiment is looking for the neutrinoless double beta decay of
 
 \subsection{Grounded cathode connection}
 
-\par The use of an AC coupling scheme implies a high pass filter (HPF) will be created. Such a filter blocks DC component and attenuates frequency components below the cutoff frequency ($f_{cutoff}$). The whole model of FEE includes (see figure \ref{fig:FEE_PMT} (a) last stage effect of the base \mbox{((R2 parallel with C1) + R1)} by the pseudodifferential connection. In order to reduce complexity we assume R2 has such a high value that it can be neglected (figure \ref{fig:FEE_PMT} (b). The PMT is modelled as a simple current source model. The Laplace transfer function of the whole system can be obtained as (eq. \ref{eq:1}) and its $f_{cutoff}$ can be approximated to (eq. \ref{fcutoff}) since C1 is greater than C2.  
+\par The use of an AC coupling scheme implies a high pass filter (HPF) will be created. Such a filter blocks DC component and attenuates frequency components below the cutoff frequency ($f_{cutoff}$). The whole model of FEE includes (see figure~\ref{fig:FEE_PMT} (a) last stage effect of the base \mbox{((R2 parallel with C1) + R1)} by the pseudodifferential connection. In order to reduce complexity we assume R2 has such a high value that it can be neglected (figure~\ref{fig:FEE_PMT} (b). The PMT is modelled as a simple current source model. The Laplace transfer function of the whole system can be obtained as (eq. \ref{eq:1}) and its $f_{cutoff}$ can be approximated to (eq. \ref{fcutoff}) since C1 is greater than C2.  
 
 %\begin{equation}
 %\frac{v_O}{i_I}=A\frac{Z_{in}R_1}{Z_{in}+R_1}\frac{(R_1+Z_{in})C_2s}{1+(R_1+Z_{in})C_2s}
@@ -239,7 +239,7 @@ f_{LFzero}=\frac{1}{R_1 C_1.2\pi}
 \end{figure}
 
 
-\par As stated in (eq. \ref{eq:1}) HPF is modified by a zero at a lower frequency  ($f_{LFzero}$) shown in (eq. \ref{fzero}) due to base circuit effect. The zero effect reduces low frequency range attenuation and modifies FEE frequency response whose final modulus and phase are shown in (fig. \ref{fig:FEE_PMT}) .
+\par As stated in (eq. \ref{eq:1}) HPF is modified by a zero at a lower frequency  ($f_{LFzero}$) shown in (eq. \ref{fzero}) due to base circuit effect. The zero effect reduces low frequency range attenuation and modifies FEE frequency response whose final modulus and phase are shown on figure \ref{fig:Full_Freq}.
 
 
 \begin{figure}
@@ -253,9 +253,9 @@ f_{LFzero}=\frac{1}{R_1 C_1.2\pi}
 
 \subsection {High $\tau$ constant value solution}
 
-Since the $\tau$ (time constant) of the equivalent circuit shown in figure \ref{fig:FEE_PMT}b is proportional to the inverse of $f_{cutoff}$, a higher $\tau$ will attenuate a shorter range of frequencies producing a signal which closely resembles the original one. However there is a problem with the implementation of this solution: good quality AC coupling capacitors that can withstand high voltages typically have low nominal values. It is hard to find capacitors higher than $\sim$10~nF that meet such specifications forcing the use of high value resistors. 
+Since the $\tau$ (time constant) of the equivalent circuit shown in figure~\ref{fig:FEE_PMT}b is proportional to the inverse of $f_{cutoff}$, a higher $\tau$ will attenuate a shorter range of frequencies producing a signal which closely resembles the original one. However there is a problem with the implementation of this solution: good quality AC coupling capacitors that can withstand high voltages typically have low nominal values. It is hard to find capacitors higher than $\sim$10~nF that meet such specifications forcing the use of high value resistors. 
 
-Such high value resistors may amplify low frequency components as shown in (fig. \ref{fig:Full_Freq_high_tau}). This effect will translate into additional baseline shifts or baseline wandering. 
+Such high value resistors may amplify low frequency components as shown on figure~\ref{fig:Full_Freq_high_tau}. This effect will translate into additional baseline shifts or baseline wandering. 
 
 \begin{figure}
 	\begin{center}
@@ -311,7 +311,7 @@ Noise specs have been fulfilled with a worst case total noise of 0.8 LSB. The th
 \subsection{Front-end electronics model for simulation}
 Once the design has been validated through real measurements it is important to build a simulation model which can help in the development of other parts of the project. This time the model has a high level of abstraction in order to be easily integrated with the software analysis modules, Python language with help of Numpy-Scipy libraries. The model comprises two different elements: the low frequency range which has already been developed (eq. \ref{eq:full_fee}) plus a fourth order low pass filter (due to the required shaping) with the right gain factor. The model response has been checked against SPICE simulations of the implemented FEE (figure~\ref{fig:Full_Freq}).
 
-\par Noise generation is introduced in the system to resemble the noise behavior of the real system, taking into account the filtering effect of every part. This is to say that for instance, the input equivalent noise of the FEE has been increased to simulate the observed effect given the 3~MHz bandwidth. The noise equivalent model of the FEE is shown in fig. \ref{fig:noise_eq} as well as the noise equations relative to the different noise contributions:
+\par Noise generation is introduced in the system to resemble the noise behavior of the real system, taking into account the filtering effect of every part. This is to say that for instance, the input equivalent noise of the FEE has been increased to simulate the observed effect given the 3~MHz bandwidth. The noise equivalent model of the FEE is shown on figure~\ref{fig:noise_eq} as well as the noise equations relative to the different noise contributions:
 
 \begin{align}  
 GAIN &= FEE_{GAIN}.DAQ_{GAIN} \\ 
