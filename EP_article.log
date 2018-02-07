@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  7 FEB 2018 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.1.30)  7 FEB 2018 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,10 +1979,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 253.
 
 [5 <./figures/FEE_PMT.png> <./figures/FEE_PMT_simple.png>]
-
-LaTeX Warning: Reference `eq:full_fee' on page 6 undefined on input line 257.
-
-
 Underfull \hbox (badness 2229) in paragraph at lines 257--258
 []\T1/lmr/m/n/10 Such high value resistors may amplify low
  []
@@ -2016,7 +2012,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 273--274
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./figures/FEEfull_freq.png> <./figures/tau_badidea.png>]
-<./figures/FEE_simple_scheme.pdf, id=197, 808.02113pt x 242.76326pt>
+<./figures/FEE_simple_scheme.pdf, id=198, 808.02113pt x 242.76326pt>
 File: ./figures/FEE_simple_scheme.pdf Graphic file (type pdf)
 <use ./figures/FEE_simple_scheme.pdf>
 Package pdftex.def Info: ./figures/FEE_simple_scheme.pdf  used on input line 28
@@ -2041,7 +2037,7 @@ Underfull \hbox (badness 1137) in paragraph at lines 311--312
 \T1/lmr/m/n/10 elements: the low frequency range which has
  []
 
-<./figures/NOISE.png, id=201, 508.299pt x 133.298pt>
+<./figures/NOISE.png, id=202, 508.299pt x 133.298pt>
 File: ./figures/NOISE.png Graphic file (type png)
 <use ./figures/NOISE.png>
 Package pdftex.def Info: ./figures/NOISE.png  used on input line 328.
@@ -2064,7 +2060,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./figures/FEE_simple_scheme.pdf, page is rotated 90 degrees> <./figures/NO
 ISE.png>]
-<./figures/BLR_acc_algo.pdf, id=245, 284.81406pt x 370.25325pt>
+<./figures/BLR_acc_algo.pdf, id=246, 284.81406pt x 370.25325pt>
 File: ./figures/BLR_acc_algo.pdf Graphic file (type pdf)
 <use ./figures/BLR_acc_algo.pdf>
 Package pdftex.def Info: ./figures/BLR_acc_algo.pdf  used on input line 357.
@@ -2099,17 +2095,17 @@ Underfull \hbox (badness 1546) in paragraph at lines 378--379
 \T1/lmr/m/n/10 recovery operation is computed in the digital
  []
 
-<./figures/7C_lin.pdf, id=264, 313.41089pt x 271.7352pt>
+<./figures/7C_lin.pdf, id=265, 313.41089pt x 271.7352pt>
 File: ./figures/7C_lin.pdf Graphic file (type pdf)
 <use ./figures/7C_lin.pdf>
 Package pdftex.def Info: ./figures/7C_lin.pdf  used on input line 384.
 (pdftex.def)             Requested size: 187.19714pt x 162.3043pt.
-<./figures/signal_preblr.png, id=265, 548.0475pt x 564.1075pt>
+<./figures/signal_preblr.png, id=266, 548.0475pt x 564.1075pt>
 File: ./figures/signal_preblr.png Graphic file (type png)
 <use ./figures/signal_preblr.png>
 Package pdftex.def Info: ./figures/signal_preblr.png  used on input line 394.
 (pdftex.def)             Requested size: 187.19714pt x 192.68059pt.
-<./figures/signal_blr.png, id=266, 552.0625pt x 563.10374pt>
+<./figures/signal_blr.png, id=267, 552.0625pt x 563.10374pt>
 File: ./figures/signal_blr.png Graphic file (type png)
 <use ./figures/signal_blr.png>
 Package pdftex.def Info: ./figures/signal_blr.png  used on input line 396.
@@ -2244,10 +2240,10 @@ m/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on EP_article.pdf (11 pages, 2475751 bytes).
+Output written on EP_article.pdf (11 pages, 2475772 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
+ 433 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
  71 named destinations out of 1000 (max. 500000)
  215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
